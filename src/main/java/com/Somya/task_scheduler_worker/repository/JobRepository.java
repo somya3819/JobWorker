@@ -7,5 +7,5 @@ import com.Somya.task_scheduler_worker.model.Job;
 
 @Repository
 public interface JobRepository extends JpaRepository<Job, Long> {
-    // This interface remains empty
+    
 }

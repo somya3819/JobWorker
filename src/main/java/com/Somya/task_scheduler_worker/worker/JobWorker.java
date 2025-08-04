@@ -11,7 +11,6 @@ public class JobWorker {
     @Autowired
     private JobRepository jobRepository;
 
-    // It tells this method to listen to the "job.queue"
     @RabbitListener(queues = "job.queue")
     public void processJob(String jobId) {
         System.out.println("------------------------------------------");
